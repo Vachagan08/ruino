@@ -1,8 +1,0 @@
-col-lg: minchev 991
-
-col-md:minched 767 
-
-col-sm 767 ic poqr
-
-sik mott pahe ok ok naye colerit krnas chap tas xoski kexni spes
-col-lg-12 col-md-6 col-sm-12  sik sax krnas me classi mej gres inqe kashxati jog media ches gre el ha
