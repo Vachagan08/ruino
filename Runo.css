@@ -11,23 +11,6 @@
     transition: all .5s;
 }
 
-/* .ul{
-    display: flex;
-    box-sizing: border-box;
-}
-
-.ul li ::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: .3rem;
-    bottom: 0;
-    background-color:  #D4A373;
-    transform: scale(0, 1);
-    transition: .4s;
-} */
-
-
 .ul::before:hover{
   transform: scale(1, 1);
 }
@@ -592,16 +575,69 @@ a > h1{
 footer{
     background: #212529;
     height: 300px;
-    /* width: 1500px; */
     padding-top: 100px;
     display: flex;
     position: relative;
     margin: auto;
 }
 
+@media(max-width: 991px){
+    footer{
+        height: 800px;
+    }
+
+    .divFoo{
+        width: 300px;
+        flex-direction: column;
+    }
+
+    
+.divExplorate{
+    margin: auto;
+    transform: translateY(-50px);
+}
+
+.contact{
+    margin: auto;
+    transform: translateY(-80px);
+}
+
+.divHeadquarter{
+    margin: auto;
+    transform: translateY(-10px);
+}
+
+.divIcons{
+    transform: translateY(50px);
+}
+
+.divIcons h2{
+  transform: translateX(20px);
+}
+
+.divHeadquarter h2{
+    transform: translateX(40px);
+}
+
+.divExplorate h2{
+    transform: translateX(20px);
+}
+
+.contact > h2{
+    transform: translateX(40px);
+}
+
+.divSecFoot{
+    display: none;
+}
+
+}
+
+
 .divSecFoot{
     background:  #343A40;;
     height: 50px;
+    position: relative;
     padding-top: 100px;
     margin: auto;
 }
@@ -611,17 +647,12 @@ footer{
     font-size: 18px;
 }
 
-.contact{
-    margin-left: 100px;
-}
-
 .li{
     color: #E5E5E5 !important; 
 }
 
 .li-fir{
     color: #E5E5E5 !important;
-    margin-top: 20px;
 }
 
  .contact ul{
@@ -630,11 +661,11 @@ footer{
 
 .divExplorate{
     color: #E5E5E5;
-    margin-left: 70px;
+
 }
 
 .divExplorate > h2{
-    font-size: 40px;
+    font-size: 18px;
 }
 
 .divExplorate > ul{
@@ -643,20 +674,17 @@ footer{
 
 .divHeadquarter{
     color: #E5E5E5;
-    margin-left: 70px;
+
 }
 
 .divHeadquarter > h2{
-    font-size: 40px;
+    font-size: 18px;
 }
 
 .divHeadquarter > ul{
     list-style: none;
 }
 
-.svgs{
-    margin-left: 70px;
-}
 
 .svgs > svg{
     margin-right: 10px;
@@ -664,12 +692,12 @@ footer{
 
 .divIcons > h2{
     color: white !important;
-    margin-left: 70px;
-    font-size: 40px;
+    font-size: 18px;
 }
 
 .divIcons{
     margin: auto;
+    /* transform: translateY(-0px); */
 }
 
 .divExplorate{
@@ -679,10 +707,22 @@ footer{
 #runoF{
     color: white;
     display: inline;
+    position: absolute;
+    top: 40%;
+    right: 90%;
 }
 
 #sub{
     color: white;
     float: right;
     margin-top: 10px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.divFoo{
+    width: 1400px;
+    margin: auto;
+    display: flex;
 }
